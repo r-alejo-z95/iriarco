@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
 
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return NextResponse.json({ errors: error.errors }, { status: 400 });
+      return NextResponse.json({ errors: error.issues }, { status: 400 });
     }
     return NextResponse.json({ message: "Error interno del servidor." }, { status: 500 });
   }
