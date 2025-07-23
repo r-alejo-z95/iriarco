@@ -11,7 +11,7 @@ const contactFormSchema = z.object({
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const validatedData = contactFormSchema.parse(body);
+    contactFormSchema.parse(body);
 
     // Aquí podrías añadir lógica adicional, como guardar en una base de datos
     // o enviar el email desde el servidor si no quisieras hacerlo desde el cliente.
