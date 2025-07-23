@@ -4,9 +4,7 @@ import { z } from 'zod';
 const contactFormSchema = z.object({
   name: z.string().min(3),
   email: z.string().email(),
-  country: z.string().nonempty(),
-  website: z.string().url().optional().or(z.literal('')),
-  job: z.string().nonempty(),
+  phone: z.string().min(10),
   message: z.string().min(10),
 });
 

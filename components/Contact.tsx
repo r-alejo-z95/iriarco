@@ -16,9 +16,7 @@ import { useState } from 'react';
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: "El nombre debe tener al menos 3 caracteres." }),
   email: z.string().email({ message: "Por favor, introduce un email válido." }),
-  country: z.string().nonempty({ message: "Por favor, selecciona un país." }),
-  website: z.string().url({ message: "Por favor, introduce una URL válida." }).optional().or(z.literal('')),
-  job: z.string().nonempty({ message: "Por favor, selecciona un cargo." }),
+  phone: z.string().min(10, { message: "Por favor, introduce un número de teléfono válido." }),
   message: z.string().min(10, { message: "El mensaje debe tener al menos 10 caracteres." }),
 });
 
@@ -54,87 +52,48 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-muted py-15 sm:py-24 lg:py-32">
+    <section className="bg-background py-15 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-4xl px-4 lg:px-0">
-        <h1 className="text-4xl font-semibold lg:text-5xl">Ayúdanos a dirigir tu consulta</h1>
-        <p className="text-muted-foreground mt-4 text-lg">Te ayudaremos a encontrar el plan y los precios adecuados para tu negocio.</p>
+        <h1 className="text-4xl font-semibold lg:text-5xl">Contáctanos</h1>
+        <p className="text-muted-foreground mt-4 text-lg">Estamos aquí para responder a tus preguntas y ayudarte con tus proyectos eléctricos.</p>
         <div className="mt-12 grid gap-12 lg:grid-cols-5">
           <div className="grid grid-cols-2 lg:col-span-2 lg:block lg:space-y-12">
             <div className="flex flex-col justify-between space-y-6">
               <div>
-                <h2 className="mb-3 text-lg font-semibold">Colabora</h2>
-                <Link href="mailto:hola@iriarco.com" className="text-primary text-lg hover:underline">
-                  hola@iriarco.com
+                <h2 className="mb-3 text-lg font-semibold">Consultas Generales</h2>
+                <Link href="mailto:info@iriarco.com" className="text-primary text-lg hover:underline">
+                  info@iriarco.com
                 </Link>
-                <p className="mt-3 text-sm">+593 99 999 9999</p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between space-y-6">
-              <div>
-                <h3 className="mb-3 text-lg font-semibold">Prensa</h3>
-                <Link href="mailto:prensa@iriarco.com" className="text-primary text-lg hover:underline">
-                  prensa@iriarco.com
-                </Link>
-                <p className="mt-3 text-sm">+593 99 999 9999</p>
+                <p className="mt-3 text-sm">099 999 9999</p>
               </div>
             </div>
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)} className="@container lg:col-span-3">
             <Card className="p-8 sm:p-12">
-              <h3 className="text-xl font-semibold">Encuentra a la persona correcta</h3>
-              <p className="mt-4 text-sm">¡Contacta a nuestro equipo de ventas! Estamos ansiosos por saber más sobre cómo planeas usar nuestra aplicación.</p>
+              <h3 className="text-xl font-semibold">Envíanos un mensaje</h3>
+              <p className="mt-4 text-sm">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
 
-              <div className="mt-12 space-y-6">
-                <div className="grid gap-3 @md:grid-cols-2">
+              <div className="mt-8 space-y-6">
+                <div>
+                  <Label htmlFor="name" className="mb-2 block">Nombre completo</Label>
+                  <Input id="name" {...register("name")} />
+                  {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+                </div>
+                <div className="grid gap-6 md:gap-3 md:grid-cols-2">
                   <div>
-                    <Label htmlFor="name">Nombre completo</Label>
-                    <Input id="name" {...register("name")} />
-                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
-                  </div>
-                  <div>
-                    <Label htmlFor="email">Email de trabajo</Label>
+                    <Label htmlFor="email" className="mb-2 block">Correo electrónico</Label>
                     <Input id="email" {...register("email")} />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                   </div>
-                </div>
-                <div>
-                  <Label htmlFor="country">País/Región</Label>
-                  <Select onValueChange={(value) => register("country").onChange({ target: { value } })}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Selecciona un país" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="Ecuador">Ecuador</SelectItem>
-                      <SelectItem value="Otro">Otro</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  {errors.country && <p className="text-red-500 text-sm mt-1">{errors.country.message}</p>}
-                </div>
-                <div className="grid gap-3 @md:grid-cols-2">
                   <div>
-                    <Label htmlFor="website">Sitio web de la empresa</Label>
-                    <Input id="website" {...register("website")} />
-                    {errors.website && <p className="text-red-500 text-sm mt-1">{errors.website.message}</p>}
-                  </div>
-                  <div>
-                    <Label htmlFor="job">Cargo</Label>
-                    <Select onValueChange={(value) => register("job").onChange({ target: { value } })}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Selecciona un cargo" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="Gerencia">Gerencia</SelectItem>
-                        <SelectItem value="Compras">Compras</SelectItem>
-                        <SelectItem value="Técnico">Técnico</SelectItem>
-                        <SelectItem value="Otro">Otro</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    {errors.job && <p className="text-red-500 text-sm mt-1">{errors.job.message}</p>}
+                    <Label htmlFor="phone" className="mb-2 block">Número de teléfono</Label>
+                    <Input id="phone" {...register("phone")} />
+                    {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>}
                   </div>
                 </div>
                 <div>
-                  <Label htmlFor="message">Mensaje</Label>
+                  <Label htmlFor="message" className="mb-2 block">Mensaje</Label>
                   <Textarea id="message" rows={3} {...register("message")} />
                   {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                 </div>
