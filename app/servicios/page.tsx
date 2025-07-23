@@ -1,6 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Servicios | Iriarco",
+  description: "Descubre los servicios de Iriarco: proyectos de ingeniería eléctrica, instalación de sistemas de cableado Hendrix y mantenimiento de redes eléctricas.",
+};
 
 const services = [
   {

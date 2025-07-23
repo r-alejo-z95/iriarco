@@ -1,6 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Proyectos | Iriarco",
+  description: "Descubre los proyectos destacados de Iriarco: electrificación rural, parques solares fotovoltaicos y modernización de redes eléctricas en Ecuador.",
+};
 
 const projects = [
   {
