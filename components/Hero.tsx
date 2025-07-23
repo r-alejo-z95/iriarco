@@ -75,13 +75,14 @@ export default function Hero() {
                         </div>
 
                         <div className="perspective-near mt-24 translate-x-12 md:absolute md:-right-6 md:bottom-16 md:left-1/2 md:top-40 md:mt-0 md:translate-x-0">
-                            <div className="before:border-foreground/5 before:bg-foreground/5 relative h-full before:absolute before:-inset-x-4 before:bottom-7 before:top-0 before:skew-x-6 before:rounded-[calc(var(--radius)+1rem)] before:border">
-                                <div className="bg-background rounded-(--radius) shadow-foreground/10 ring-foreground/5 relative h-full -translate-y-12 skew-x-6 overflow-hidden border border-transparent shadow-md ring-1">
+                            <div className="before:border-foreground/5 before:bg-foreground/5 relative h-full before:absolute before:-inset-x-4 before:bottom-7 before:top-0 before:rounded-[calc(var(--radius)+1rem)] before:border">
+                                <div className="bg-background rounded-(--radius) shadow-foreground/10 ring-foreground/5 relative h-full -translate-y-12 overflow-hidden border border-transparent shadow-md ring-1">
                                     <Image
-                                        src="/mist/tailark.png"
-                                        alt="app screen"
-                                        width="2880"
-                                        height="1842"
+                                        src="/hero.jpg"
+                                        alt="A high voltage tower with a blue sky in the background"
+                                        width="1024"
+                                        height="682"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                         className="object-top-left size-full object-cover"
                                     />
                                 </div>
