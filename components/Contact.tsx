@@ -62,9 +62,9 @@ export default function Contact() {
               <div>
                 <h2 className="mb-3 text-lg font-semibold">Consultas Generales</h2>
                 <Link href="mailto:info@iriarco.com" className="text-primary text-lg hover:underline">
-                  info@iriarco.com
+                  galban@iriarco.com
                 </Link>
-                <p className="mt-3 text-sm">099 999 9999</p>
+                <p className="mt-3 text-sm">098 449 1120</p>
               </div>
             </div>
           </div>
