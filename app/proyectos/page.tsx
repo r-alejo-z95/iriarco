@@ -8,7 +8,28 @@ export const metadata: Metadata = {
   description: "Descubre los proyectos destacados de Iriarco: electrificación rural, parques solares fotovoltaicos y modernización de redes eléctricas en Ecuador.",
 };
 
-const mainProjects = [
+interface MainProject {
+  nombre: string;
+  ubicacion?: string;
+  voltaje: string;
+  longitud: string;
+  conductor: string;
+  carga?: string;
+  empresa?: string;
+  anio: number | string;
+  notas?: string;
+  image: string;
+}
+
+interface OtherProject {
+  nombre: string;
+  anio: number;
+  longitud: string;
+  voltaje: string;
+  conductor: string;
+}
+
+const mainProjects: MainProject[] = [
   {
     nombre: "ANTENAS DEL PICHINCHA",
     ubicacion: "Quito, 4000 msnm",
@@ -83,14 +104,14 @@ const mainProjects = [
   }
 ];
 
-const otherProjects = [
+const otherProjects: OtherProject[] = [
   { nombre: "ANDES PETROLEUM", anio: 2013, longitud: "7 km", voltaje: "34.5 kV", conductor: "477 MCM" },
   { nombre: "GALÁPAGOS", anio: 2015, longitud: "2 km", voltaje: "13.8 kV", conductor: "2/0 AWG" },
   { nombre: "LANDEV - GUAYAQUIL", anio: 2014, longitud: "2 km", voltaje: "13.8 kV", conductor: "2/0 AWG" },
   { nombre: "PRIMARIO S/E OLÍMPICO - QUITO", anio: 2015, longitud: "1.9 km", voltaje: "22.8 kV", conductor: "396 MCM" }
 ];
 
-const ProjectCard = ({ project }: { project: any }) => (
+const ProjectCard = ({ project }: { project: MainProject }) => (
   <Card>
     <Image src={project.image} alt={project.nombre} width={500} height={300} className="rounded-t-lg object-cover h-48 w-full" />
     <CardHeader>
@@ -111,7 +132,7 @@ const ProjectCard = ({ project }: { project: any }) => (
   </Card>
 );
 
-const OtherProjectCard = ({ project }: { project: any }) => (
+const OtherProjectCard = ({ project }: { project: OtherProject }) => (
   <Card>
     <CardHeader>
       <CardTitle>{project.nombre}</CardTitle>

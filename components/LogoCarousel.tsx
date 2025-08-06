@@ -15,7 +15,7 @@ const logos = [
 ]
 
 export default function LogoCarousel() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoscroll({ speed: 1 })])
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoscroll({ speed: 1 })])
 
     return (
         <div className="embla" ref={emblaRef}>

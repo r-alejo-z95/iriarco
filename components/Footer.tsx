@@ -1,6 +1,5 @@
 import { Logo } from '@/components/Logo'
 import Link from 'next/link'
-import { Code } from 'lucide-react'
 
 const links = [
     { title: 'Nosotros', href: '/nosotros' },
