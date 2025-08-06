@@ -20,7 +20,7 @@ export default function AboutUsSnippet() {
           </div>
           <div className="overflow-hidden rounded-lg">
             <Image
-              src="/placeholder.svg"
+              src="/crew.jpeg"
               alt="Equipo de Iriarco trabajando en un proyecto"
               width={600}
               height={400}

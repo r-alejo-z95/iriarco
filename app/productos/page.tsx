@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Productos | Iriarco",
+  title: "Productos",
   description: "Explora el catálogo de productos de Iriarco: cableado eléctrico ecológico, cableados de redes compactas, equipos de medición Sensorlink, paneles solares y sistemas de puesta a tierra Stavol.",
 };
 

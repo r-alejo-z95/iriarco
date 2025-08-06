@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Servicios | Iriarco",
+  title: "Servicios",
   description: "Descubre los servicios de Iriarco: proyectos de ingeniería eléctrica, instalación de sistemas de cableado Hendrix y mantenimiento de redes eléctricas.",
 };
 
@@ -12,17 +12,17 @@ const services = [
   {
     title: 'Proyectos de Ingeniería Eléctrica',
     description: 'Diseño, planificación y ejecución de proyectos eléctricos para empresas públicas y privadas.',
-    image: 'https://images.unsplash.com/photo-1598092655340-e281911919b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: '/servicios/diseno.jpg',
   },
   {
     title: 'Instalación de Sistemas de Cableado',
     description: 'Instalación profesional de sistemas de cableado Hendrix, redes compactas y protegidas.',
-    image: 'https://images.unsplash.com/photo-1598092655340-e281911919b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: '/servicios/instalacion.jpg',
   },
   {
-    title: 'Mantenimiento de Redes Eléctricas',
-    description: 'Servicios de mantenimiento preventivo y correctivo para garantizar la continuidad del servicio.',
-    image: 'https://images.unsplash.com/photo-1598092655340-e281911919b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Proyectos Fotovoltaicos',
+    description: 'Planeación, instalación y mantenimiento de paneles solares.',
+    image: '/servicios/solar.jpg',
   },
 ];
 

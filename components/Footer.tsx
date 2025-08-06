@@ -141,7 +141,7 @@ export default function FooterSection() {
                     </Link> */}
                 </div>
                 <span className="text-muted-foreground mb-4 block text-center text-sm"> © {new Date().getFullYear()} IRIARCO S.A., Todos los derechos reservados</span>
-                <p className="text-muted-foreground flex items-center justify-center gap-2 text-center text-sm">
+                {/* <p className="text-muted-foreground flex items-center justify-center gap-2 text-center text-sm">
                     Diseñado y desarrollado por<Code className="size-4" />
                     <Link
                         href="https://github.com/r-alejo-z95"
@@ -150,7 +150,7 @@ export default function FooterSection() {
                         className="hover:text-primary underline underline-offset-2">
                         RZ
                     </Link>
-                </p>
+                </p> */}
             </div>
         </footer>
     )

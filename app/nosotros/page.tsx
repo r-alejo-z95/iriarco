@@ -3,7 +3,7 @@ import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nosotros | Iriarco",
+  title: "Nosotros",
   description: "Conoce más sobre Iriarco, una empresa ecuatoriana con más de 20 años de experiencia en soluciones eléctricas, importación y comercialización de equipos de alta calidad.",
 };
 

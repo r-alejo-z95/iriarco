@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import LogoCarousel from './LogoCarousel'
 
 export default function Hero() {
     return (
@@ -39,34 +42,8 @@ export default function Hero() {
 
                                 <div className="mt-10">
                                     <p className="text-muted-foreground">Trabajamos con:</p>
-                                    <div className="mt-6 grid max-w-sm grid-cols-3 gap-3">
-                                        <div className="flex">
-                                            <Image
-                                                className="h-8 w-fit"
-                                                src="/hero/eeq1.png"
-                                                alt="Empresa Eléctrica Quito Logo 1"
-                                                width={300}
-                                                height={121}
-                                            />
-                                        </div>
-                                        <div className="flex">
-                                            <Image
-                                                className="h-8 w-fit"
-                                                src="/hero/eeq2.png"
-                                                alt="Empresa Eléctrica Quito Logo 2"
-                                                width={300}
-                                                height={121}
-                                            />
-                                        </div>
-                                        <div className="flex">
-                                            <Image
-                                                className="h-8 w-fit"
-                                                src="/hero/eeq3.png"
-                                                alt="Empresa Eléctrica Quito Logo 3"
-                                                width={300}
-                                                height={121}
-                                            />
-                                        </div>
+                                    <div className="mt-6 mr-6">
+                                        <LogoCarousel />
                                     </div>
                                 </div>
                             </div>

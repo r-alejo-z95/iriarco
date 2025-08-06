@@ -5,19 +5,14 @@ import Link from "next/link";
 
 const projects = [
   {
-    image: "/placeholder.svg",
-    title: "Subestación Eléctrica Industrial",
-    description: "Modernización completa de la subestación para una de las plantas industriales más grandes de la región.",
+    image: "/proyectos/aerovia.jpg",
+    title: "Aerovía 69 KV",
+    description: "Instalación de cableado Hendrix desviando una línea de transmisión para evitar una estación de Aerovía.",
   },
   {
-    image: "/placeholder.svg",
-    title: "Línea de Transmisión Rural",
-    description: "Extensión de la red eléctrica para llevar energía a comunidades rurales, mejorando su calidad de vida.",
-  },
-  {
-    image: "/placeholder.svg",
-    title: "Parque Eólico",
-    description: "Diseño e implementación de la infraestructura eléctrica para un nuevo parque de energía renovable.",
+    image: "/proyectos/antenas.jpg",
+    title: "Antenas del Pichincha",
+    description: "Red Hendrix instalada para alimentar las antenas de telecomunicaciones sobre el Cerro Pichincha.",
   },
 ];
 
@@ -31,9 +26,9 @@ export default function RecentProjects() {
             Casos de éxito que demuestran nuestra experiencia y compromiso con la calidad.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-12 flex gap-8 md:gap-0 flex-col md:flex-row justify-evenly">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden">
+            <Card key={index} className="overflow-hidden w-xs">
               <CardHeader className="p-0">
                 <Image
                   src={project.image}
