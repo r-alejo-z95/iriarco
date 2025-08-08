@@ -97,8 +97,8 @@ export default function Contact() {
   return (
     <section className="bg-background py-15 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-4xl px-4 lg:px-0">
-        <h1 className="text-4xl font-semibold lg:text-5xl">Contáctanos</h1>
-        <p className="text-muted-foreground mt-4 text-lg">Estamos aquí para responder a tus preguntas y ayudarte con tus proyectos eléctricos.</p>
+        <h1 className="max-w-md text-balance text-5xl font-bold text-gray-900 md:text-6xl">Contáctanos</h1>
+        <p className="text-gray-600 my-8 max-w-2xl text-balance text-xl leading-relaxed">Estamos aquí para responder a tus preguntas y ayudarte con tus proyectos eléctricos.</p>
         <div className="mt-12 grid gap-12 lg:grid-cols-5">
           <div className="grid grid-cols-2 lg:col-span-2 lg:block lg:space-y-12">
             <div className="flex flex-col justify-between space-y-6">
