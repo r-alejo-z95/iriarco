@@ -19,7 +19,7 @@ const projects = [
     featured: true
   },
   {
-    image: "/proyectos/antenas-pichincha.jpg",
+    image: "/proyectos/antenas-pichincha.JPG",
     title: "Antenas del Pichincha",
     description: "Red Hendrix instalada a 4000 msnm para alimentar antenas de telecomunicaciones. Postes de fibra de vidrio en condiciones extremas.",
     specs: {
