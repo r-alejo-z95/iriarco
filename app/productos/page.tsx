@@ -68,7 +68,7 @@ const products = [
         models: ['6-333 (Radio Ampstik + Voltstik)']
       },
       {
-        title: 'Varcoder - Registrador de Carga',
+        title: 'Varcorder - Registrador de Carga',
         description: 'Registrador de amperios, factor de potencia y VARs para optimización de distribución aérea. Recolecta perfiles de carga durante más de 90 días.',
         specs: [
           'Corriente: 1-2000A',
