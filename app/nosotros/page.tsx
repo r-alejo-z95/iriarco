@@ -204,7 +204,7 @@ const AboutPage = () => {
         <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
           Con más de 20 años de experiencia, estamos preparados para hacer realidad tus proyectos eléctricos más ambiciosos.
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col justify-center sm:flex-row gap-4">
           <Button asChild size="lg">
             <Link href="/contacto">Contactar Ahora</Link>
           </Button>

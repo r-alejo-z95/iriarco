@@ -231,7 +231,7 @@ const ProductsPage = () => {
         <p className="text-gray-700 mb-6">
           Nuestro equipo de expertos está listo para ayudarte a encontrar la solución perfecta para tu proyecto.
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col justify-center sm:flex-row gap-4">
           <Button asChild size="lg">
             <Link href="/contacto">Contactar Ventas</Link>
           </Button>

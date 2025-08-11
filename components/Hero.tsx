@@ -23,7 +23,7 @@ export default function Hero() {
                                         para tus proyectos eléctricos más exigentes.
                                     </p>
 
-                                    <div className="flex items-center gap-4">
+                                    <div className="flex flex-col justify-center md:justify-start sm:flex-row gap-4">
                                         <Button
                                             asChild
                                             size="lg"

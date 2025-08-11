@@ -371,7 +371,7 @@ const ProjectsPage = () => {
           Nuestra experiencia comprobada en más de 15 proyectos principales nos respalda. 
           Permítenos ser parte de tu próximo desafío eléctrico.
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col justify-center sm:flex-row gap-4">
           <Button asChild size="lg">
             <Link href="/contacto">Consultar Proyecto</Link>
           </Button>

@@ -38,32 +38,32 @@ export default function CallToAction() {
       <div className="mx-auto max-w-6xl px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <h2 className="text-4xl font-bold md:text-5xl mb-6 leading-tight">
-              Hablemos de tu próximo proyecto
-            </h2>
-            <p className="text-xl text-red-100 leading-relaxed mb-8 max-w-2xl">
-              ¿Listo para empezar? Nuestro equipo de expertos está preparado para ayudarte 
-              a encontrar la mejor solución para tus necesidades eléctricas más exigentes.
-            </p>
-
-            {/* Key Benefits */}
-            <div className="grid sm:grid-cols-2 gap-4 mb-8 w-full max-w-md lg:max-w-none">
-              {[
-                "Consulta gratuita inicial",
-                "+20 años de experiencia",
-                "Soluciones personalizadas",
-                "Soporte técnico 24/7"
-              ].map((benefit, index) => (
-                <div key={index} className="flex items-center justify-center lg:justify-start">
-                  <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                  <span className="text-red-100">{benefit}</span>
-                </div>
-              ))}
+          <div>
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <h2 className="text-4xl font-bold md:text-5xl mb-6 leading-tight">
+                Hablemos de tu próximo proyecto
+              </h2>
+              <p className="text-xl text-red-100 leading-relaxed mb-8 max-w-2xl">
+                ¿Listo para empezar? Nuestro equipo de expertos está preparado para ayudarte
+                a encontrar la mejor solución para tus necesidades eléctricas más exigentes.
+              </p>
+              {/* Key Benefits */}
+              <div className="grid sm:grid-cols-2 gap-4 mb-8 w-full max-w-md lg:max-w-none">
+                {[
+                  "Consulta gratuita inicial",
+                  "+20 años de experiencia",
+                  "Soluciones personalizadas",
+                  "Soporte técnico 24/7"
+                ].map((benefit, index) => (
+                  <div key={index} className="flex items-center justify-center lg:justify-start">
+                    <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
+                    <span className="text-red-100">{benefit}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center w-full">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button asChild size="lg" variant="outline" className="border-white text-foreground hover:bg-accent hover:text-accent-foreground">
                 <Link href="/contacto">Contáctanos</Link>
               </Button>

@@ -180,7 +180,7 @@ export default function RecentProjects() {
             Explora todos nuestros proyectos y descubre cómo hemos resuelto desafíos 
             similares al tuyo en más de 20 años de experiencia.
           </p>
-          <div className="space-x-4">
+          <div className="flex flex-col justify-center sm:flex-row gap-4">
             <Button asChild size="lg">
               <Link href="/proyectos">Ver todos los proyectos</Link>
             </Button>

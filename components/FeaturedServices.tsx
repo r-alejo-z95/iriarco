@@ -99,7 +99,7 @@ export default function FeaturedServices() {
             Nuestro equipo de expertos está listo para analizar tu proyecto y ofrecerte 
             la mejor solución técnica.
           </p>
-          <div className="space-x-4">
+          <div className="flex flex-col justify-center sm:flex-row gap-4">
             <Button asChild size="lg">
               <Link href="/servicios">Ver todos los servicios</Link>
             </Button>

@@ -57,7 +57,7 @@ export default function AboutUsSnippet() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col justify-center lg:justify-start sm:flex-row gap-4">
               <Button asChild size="lg">
                 <Link href="/nosotros">Conoce más sobre nosotros</Link>
               </Button>

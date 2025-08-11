@@ -274,7 +274,7 @@ const ServicesPage = () => {
           Nuestro equipo de expertos está listo para convertir tus ideas en realidad. 
           Contáctanos para una consulta gratuita y descubre cómo podemos ayudarte.
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col justify-center sm:flex-row gap-4">
           <Button asChild size="lg">
             <Link href="/contacto">Solicitar Cotización</Link>
           </Button>
