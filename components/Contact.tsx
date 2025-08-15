@@ -72,7 +72,7 @@ export default function Contact() {
       );
 
       console.log('Email sent successfully:', response);
-      setSubmitStatus({ success: true, message: "¡Mensaje enviado con éxito!" });
+      setSubmitStatus({ success: true, message: "Gracias por contactarnos, su mensaje se ha enviado con éxito, una persona de nuestra empresa se pondrá en contacto a la brevedad posible." });
       
       // Reset completo del formulario
       reset({
@@ -87,7 +87,7 @@ export default function Contact() {
       console.error("Failed to send email:", error);
       setSubmitStatus({ 
         success: false, 
-        message: "Hubo un error al enviar el mensaje. Comunícate directamente a galban@iriarco.com o al 098 449 1120" 
+        message: "Hubo un error al enviar el mensaje. Comunícate directamente a galban@iriarco.com o al +593 98 449 1120" 
       });
     } finally {
       setIsSubmitting(false);
@@ -107,7 +107,7 @@ export default function Contact() {
                 <Link href="mailto:info@iriarco.com" className="text-primary text-lg hover:underline">
                   galban@iriarco.com
                 </Link>
-                <p className="mt-3 text-sm">098 449 1120</p>
+                <p className="mt-3 text-sm">+593 98 449 1120</p>
               </div>
             </div>
           </div>

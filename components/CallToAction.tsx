@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: <Phone className="w-6 h-6 text-red-200" />,
     label: "Teléfono",
-    value: "098 449 1120"
+    value: "+593 98 449 1120"
   },
   {
     icon: <MapPin className="w-6 h-6 text-red-200" />,
