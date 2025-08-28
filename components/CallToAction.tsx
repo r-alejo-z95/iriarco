@@ -7,22 +7,24 @@ const contactInfo = [
   {
     icon: <Mail className="w-6 h-6 text-red-200" />,
     label: "Email",
-    value: "galban@iriarco.com"
+    value1: "galban@iriarco.com",
+    value2: "calban@iriarco.com"
   },
   {
     icon: <Phone className="w-6 h-6 text-red-200" />,
     label: "Teléfono",
-    value: "+593 98 449 1120"
+    value1: "+593 98 449 1120",
+    value2: "+593 98 469 1464"
   },
   {
     icon: <MapPin className="w-6 h-6 text-red-200" />,
     label: "Ubicación",
-    value: "San Salvador E7-85 y Martin Carrion, Quito, Ecuador"
+    value1: "San Salvador E7-85 y Martin Carrion, Quito, Ecuador"
   },
   {
     icon: <Clock className="w-6 h-6 text-red-200" />,
     label: "Horario",
-    value: "Lun - Vie: 8:00 - 17:00"
+    value1: "Lun - Vie: 8:00 - 17:00"
   }
 ];
 
@@ -84,7 +86,8 @@ export default function CallToAction() {
                   </div>
                   <div>
                     <p className="font-semibold text-lg">{item.label}</p>
-                    <p className="text-red-100">{item.value}</p>
+                    <p className="text-red-100">{item.value1}</p>
+                    <p className="text-red-100">{item.value2}</p>
                   </div>
                 </div>
               ))}

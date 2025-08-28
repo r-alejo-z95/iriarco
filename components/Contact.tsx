@@ -102,12 +102,20 @@ export default function Contact() {
         <div className="mt-12 grid gap-12 lg:grid-cols-5">
           <div className="grid grid-cols-2 lg:col-span-2 lg:block lg:space-y-12">
             <div className="flex flex-col justify-between space-y-6">
-              <div>
+              <div className="space-y-3">
                 <h2 className="mb-3 text-lg font-semibold">Consultas Generales</h2>
-                <Link href="mailto:info@iriarco.com" className="text-primary text-lg hover:underline">
-                  galban@iriarco.com
-                </Link>
-                <p className="mt-3 text-sm">+593 98 449 1120</p>
+                <div>
+                  <Link href="mailto:galban@iriarco.com" className="text-primary text-lg hover:underline">
+                    galban@iriarco.com
+                  </Link>
+                  <p className="mt-3 text-sm">+593 98 449 1120</p>
+                </div>
+                <div>
+                  <Link href="mailto:calban@iriarco.com" className="text-primary text-lg hover:underline">
+                    calban@iriarco.com
+                  </Link>
+                  <p className="mt-3 text-sm">+593 98 469 1464</p>
+                </div>
               </div>
             </div>
           </div>
