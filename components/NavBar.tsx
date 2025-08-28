@@ -1,12 +1,12 @@
 'use client';
 
 import Link from 'next/link'
-import { Logo } from '@/components/Logo'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {useState, useEffect, useRef} from 'react'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 interface MenuItem {
     name: string;
@@ -57,13 +57,19 @@ export default function NavBar() {
             className={cn('sticky top-0 z-20 w-full transition-all duration-300', isScrolled && 'bg-background/75 border-b border-black/5 backdrop-blur-lg')}>
             <div className="mx-auto max-w-5xl px-6">
                 <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0">
-                    <div className="flex w-full justify-between gap-6 lg:w-auto">
+                    <div className="flex w-full justify-between items-center gap-6 lg:w-auto">
                         <Link
                             href="/"
                             aria-label="home"
                             className="flex items-center space-x-2"
                             onClick={() => setMenuState(false)}>
-                            <Logo />
+                            <Image 
+                                src="/Logo.svg"
+                                alt="Iriarco Logo"
+                                width={110}
+                                height={30}
+                                className="h-6 w-auto"
+                            />
                         </Link>
 
                         <button

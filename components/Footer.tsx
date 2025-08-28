@@ -1,5 +1,5 @@
-import { Logo } from '@/components/Logo'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const links = [
     { title: 'Nosotros', href: '/nosotros' },
@@ -17,7 +17,13 @@ export default function FooterSection() {
                     href="/"
                     aria-label="go home"
                     className="mx-auto block size-fit">
-                    <Logo />
+                    <Image 
+                        src="/Logo.svg"
+                        alt="Iriarco Logo"
+                        width={110}
+                        height={30}
+                        className="h-6 w-auto"
+                    />
                 </Link>
 
                 <div className="my-8 flex flex-wrap justify-center gap-6">
